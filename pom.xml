@@ -27,16 +27,15 @@ THE SOFTWARE.
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>org.jvnet.hudson.plugins</groupId>
-        <artifactId>plugin</artifactId>
-        <version>1.381</version>
-        <relativePath>../pom.xml</relativePath>
+        <groupId>org.eclipse.hudson.plugins</groupId>
+        <artifactId>hudson-plugin-parent</artifactId>
+        <version>3.0.0</version>
     </parent>
 
-
+    <groupId>org.hudsonci.plugins</groupId>
     <artifactId>multiline-tabbar-plugin</artifactId>
     <packaging>hpi</packaging>
-     <version>1.2-SNAPSHOT</version>
+     <version>1.3-SNAPSHOT</version>
     <name>Multiline Views TabBar Plugin</name>
     <description>Provides a multi-line tab bar for views.</description>
 
@@ -56,5 +55,15 @@ THE SOFTWARE.
             <id>wjprakash</id>
         </developer>
     </developers>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.hudson.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <version>3.0.2</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 
